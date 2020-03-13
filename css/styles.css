@@ -1,0 +1,49 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    border: 1px solid red;
+}
+
+.nav-main {
+    height: 80px;
+    border: 2px solid green;
+    display: flex;
+    align-items: center;
+}
+
+.nav-main ul {
+    list-style: none;
+    border: 1px solid blue;
+    margin: 0;
+    flex: 1;
+}
+
+.nav-main ul li {
+    display: inline;
+    border: 1px solid black;
+    padding: 0 10px;
+}
+
+#nav-logo-wix {
+    height: 50px;
+}
+
+#nav-logo-world {
+    width: 20px;
+    height: auto;
+}
+
+.nav-right-wrapper {
+    border: 2px solid salmon;
+    display: flex;
+    align-items: center;
+}
