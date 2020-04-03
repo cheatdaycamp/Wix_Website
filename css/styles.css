@@ -11,6 +11,7 @@ html, body {
 body {
     display: flex;
     flex-direction: column;
+    font-family: Arial, Helvetica, sans-serif
 }
 
 p {
@@ -18,41 +19,88 @@ p {
 }
 
 .nav-main {
-    height: 80px;
+    height: 70px;
+    padding: 18px 60px;
     display: flex;
     align-items: center;
 }
 
-.nav-main ul {
-    list-style: none;
-    border: 1px solid blue;
+.nav-main li:hover {
+    color: rgba(31, 118, 255, 1);
+    cursor: pointer
+}
+
+.nav-right-wrapper span {
+    margin-left: 5px;
+}
+
+.separator {
+    padding: 0;
     margin: 0;
+}
+
+.separator hr {
+    border: .5px solid rgba(0, 0, 0, .05);
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+.nav-right-wrapper button {
+    border-radius: 38px;
+    font: normal normal normal 16px/1.4em helveticaneuew01-55roma, sans-serif;
+    transition: color 0.4s ease 0s;
+    color: #116DFF;
+    border: 1px solid #116DFF;
+    padding: 6px 40px;
+    background-color: white;
+    margin-left: 30px;
+    transition: 0.4s ease;
+}
+
+.nav-right-wrapper a {
+    text-decoration: none;
+    color: Black;
+}
+
+/*.nav-right-wrapper path, .nav-right-wrapper svg, .nav-right-wrapper g, .nav-right-wrapper defs, #world, #nav-logo-world {
+    fill: blue;
+    background-color: red;
+    color: orange;
+    opacity: 1;
+}*/
+
+.nav-right-wrapper button:hover {
+    background-color: #116DFF;
+    color: white;
+}
+
+.nav-main ul {
+    display: flex;
+    height: 100%;
+    list-style: none;
+    margin: 0 40px;
     flex: 1;
 }
 
 .nav-main ul li {
     display: inline;
-    border: 1px solid black;
-    padding: 0 10px;
+    align-self: center;
+    padding: 0 20px;
+    transition: .4s ease
 }
 
 #nav-logo-wix {
-    height: 50px;
-}
-
-#nav-logo-world {
-    width: 20px;
-    height: auto;
+    height: 100%;
+    /*padding: 8px*/
 }
 
 .nav-right-wrapper {
-    border: 2px solid salmon;
     display: flex;
     align-items: center;
 }
 
 main {
-    border: 2px solid lightgreen;
     display: flex;
     flex-direction: column;
 }
@@ -60,7 +108,6 @@ main {
 main>section {
     display: flex;
     width: 100%;
-    border: 5px solid red;
     color: white;
     height: 100%;
     align-items: center;
@@ -175,7 +222,7 @@ main>section>div * {
     width: 50%;
 }
 
-hr {
+section hr {
     background-color: white;
     height: 2px;
 }
