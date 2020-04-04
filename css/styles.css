@@ -1,4 +1,3 @@
-
 .section-1 {
     border: 4px solid black;
     padding: 50px 0;
@@ -75,7 +74,6 @@
     padding: 2rem;
 }
 
-
 .section-2-left h1 {
     text-align: center;
 }
@@ -103,12 +101,17 @@
 }
 
 .section-6 {
-    height: 900px;
-    border: 2px solid lightseagreen!important;
+    border: 6px solid lightseagreen!important;
+}
+
+.section-6>div {
+    max-height: min-content;
+    border: 2px solid coral;
 }
 
 .section-6 img {
-    max-width: calc(100% - 40px);
+    width: 100%;
+    height: auto;
 }
 
 .section-8 {
@@ -186,21 +189,27 @@ section hr {
     height: 100%
 }
 
-.section-5 {
-    border: 4px solid red;
-}
-
 .section-5>div {
     border: 3px solid orange;
 }
 
-.section-4-left, .section-5-left, .section-6-left {
+.section-4-left, .section-5-left {
     padding: 140px 60px;
     align-items: flex-end;
 }
 
-.section-5-right, .section-4-right, .section-6-right {
+.section-5-right, .section-4-right {
     padding: 140px 60px;
+    align-items: flex-start;
+}
+
+.section-6-left {
+    padding: 0 60px;
+    align-items: flex-end;
+}
+
+.section-6-right {
+    padding: 0 60px;
     align-items: flex-start;
 }
 
@@ -212,7 +221,6 @@ section hr {
     max-width: 450px;
     flex: 1;
     justify-content: center;
-    height: 100%;
 }
 
 .section-9 {
@@ -248,8 +256,8 @@ section hr {
 
 .section-13-center {
     width: 100%;
-    border-top: 1px solid coral;
-    border-bottom: 1px solid coral;
-    padding: 60px 0;
+    border-top: 1px solid rgb(202, 202, 202);
+    border-bottom: 1px solid rgb(202, 202, 202);
+    padding: 50px 0;
     text-align: center;
 }
