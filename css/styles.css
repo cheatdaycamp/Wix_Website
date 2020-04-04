@@ -228,8 +228,8 @@ section div a:HOVER {
 }
 
 .section-3 {
-    height: 1220px;
-    background-color: green;
+    height: 1100px;
+    background-color: #035946;
 }
 
 .section-4 {
@@ -271,25 +271,41 @@ section div a:HOVER {
     justify-content: center;
 }
 
+.section-3-left {
+    display: flex;
+    padding: 150px;
+    /*justify-content: space-around!important;*/
+    border: 6px solid orange;
+}
+
+.section-3-left h1 {
+    font-weight: 600;
+}
+
+.section-3-left-wrapper div h5, .section-3-left div h5 b {
+    font-weight: 600;
+    font-size: 1.5rem;
+}
+
 .section-3-left-wrapper {
     display: flex;
     flex-wrap: wrap;
-    border: 1px solid white;
-    flex: 1;
+    margin: 5rem 0
 }
 
 .section-3-left-wrapper div {
     padding: 10px;
     width: 50%;
+    height: min-content;
 }
 
 section hr {
     background-color: white;
-    height: 2px;
+    height: 1px;
 }
 
 .section-3-right img {
-    width: 80%;
+    width: 45%;
     height: auto;
 }
 
@@ -297,7 +313,7 @@ section hr {
     height: 100%;
     flex: 1;
     background: rgb(255, 255, 255);
-    background: linear-gradient(180deg, rgba(255, 255, 255, 1) 50%, rgba(82, 82, 82, 1) 50%);
+    background: linear-gradient(180deg, #f5f5f5 50%, #eeeeee 50%);
 }
 
 main>section>.section-4-left {
