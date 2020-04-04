@@ -8,17 +8,67 @@ footer {
 }
 
 .footer-col:not(:last-child) {
-    border: 1px solid red;
     display: flex;
     flex: 1;
     flex-direction: column;
 }
 
 .footer-col:last-child {
-    border: 1px solid blue;
     width: 30%;
 }
 
 footer ul {
     list-style: none;
+    line-height: 1.8rem;
+    font-family: 300;
+}
+
+footer ul li *, footer p {
+    font-size: 11pt;
+    font-weight: 400;
+}
+
+footer .footer-col ul li {
+    line-height: 2rem;
+}
+
+footer h6 {
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+}
+
+footer .footer-col ul li a {
+    text-decoration: none;
+    color: black;
+}
+
+footer ul li a:hover {
+    cursor: pointer;
+    text-decoration: none;
+    opacity: .9;
+    color: black;
+}
+
+footer .logo {
+    height: 2rem;
+    margin-bottom: 2rem;
+}
+
+#social-media-icons {
+    width: auto;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row;
+    font-size: 20px;
+    margin-top: 60px;
+}
+
+#social-media-icons li * {
+    font-size: 20px;
+}
+
+#social-media-icons li {
+    min-width: 40px;
+    display: flex;
+    justify-content: center;
 }
