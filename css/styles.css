@@ -1,97 +1,3 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: HelveNeu;
-    font-weight: 300;
-    font-size: 16px;
-}
-
-html, body {
-    width: 100%;
-}
-
-body {
-    display: flex;
-    flex-direction: column;
-}
-
-p {
-    margin: 0;
-}
-
-.nav-main {
-    height: 70px;
-    padding: 18px 60px;
-    display: flex;
-    align-items: center;
-}
-
-.nav-main li:hover {
-    color: rgba(31, 118, 255, 1);
-    cursor: pointer
-}
-
-.nav-right-wrapper span {
-    margin-left: 5px;
-}
-
-.separator {
-    padding: 0;
-    margin: 0;
-}
-
-.separator hr {
-    border: .5px solid rgba(0, 0, 0, .05);
-    max-width: 100%;
-    padding: 0;
-    margin: 0;
-}
-
-.nav-right-wrapper button {
-    border-radius: 38px;
-    transition: color 0.4s ease 0s;
-    color: #116DFF;
-    border: 1px solid #116DFF;
-    padding: 6px 40px;
-    background-color: white;
-    margin-left: 30px;
-    transition: 0.4s ease;
-}
-
-.nav-right-wrapper button:hover {
-    background-color: #116DFF;
-    color: white;
-}
-
-.nav-right-wrapper a {
-    text-decoration: none;
-    color: Black;
-}
-
-.nav-main ul {
-    display: flex;
-    height: 100%;
-    list-style: none;
-    margin: 0 40px;
-    flex: 1;
-}
-
-.nav-main ul li {
-    display: inline;
-    align-self: center;
-    padding: 0 20px;
-    transition: .4s ease
-}
-
-#nav-logo-wix {
-    height: 100%;
-}
-
-.nav-right-wrapper {
-    display: flex;
-    align-items: center;
-}
 
 main {
     display: flex;
@@ -113,6 +19,7 @@ main>section>div {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    height: 100%;
 }
 
 main>section>div * {
@@ -190,12 +97,13 @@ section div a {
 section div a, section div a u {
     font-size: 1.5rem;
     font-weight: 600;
+    color: black
 }
 
 section div a:HOVER {
     text-decoration: none;
     opacity: .9;
-    color: white;
+    color: black;
 }
 
 .section-2 {
@@ -207,14 +115,19 @@ section div a:HOVER {
     align-items: left;
 }
 
-.section-2-left {
+.section-2-left, .section-4-left {
     padding: 2rem;
 }
 
-.section-2-left h1 {
+section h1 {
     font-size: 3rem;
-    text-align: center;
     font-weight: 800;
+    margin-bottom: 2rem;
+    ;
+}
+
+.section-2-left h1 {
+    text-align: center;
 }
 
 .section-2-right {
@@ -223,7 +136,6 @@ section div a:HOVER {
 
 .section-2-right p {
     font-size: 1.2rem;
-    /*text-align: center;*/
     font-weight: 300;
 }
 
@@ -237,11 +149,12 @@ section div a:HOVER {
 }
 
 .section-5 {
-    height: 700px;
+    height: 600px;
 }
 
 .section-6 {
-    padding: 40px;
+    height: 900px;
+    border: 2px solid lightseagreen!important;
 }
 
 .section-6 img {
@@ -272,14 +185,7 @@ section div a:HOVER {
 }
 
 .section-3-left {
-    display: flex;
     padding: 150px;
-    /*justify-content: space-around!important;*/
-    border: 6px solid orange;
-}
-
-.section-3-left h1 {
-    font-weight: 600;
 }
 
 .section-3-left-wrapper div h5, .section-3-left div h5 b {
@@ -305,7 +211,7 @@ section hr {
 }
 
 .section-3-right img {
-    width: 45%;
+    width: 50%;
     height: auto;
 }
 
@@ -316,18 +222,47 @@ section hr {
     background: linear-gradient(180deg, #f5f5f5 50%, #eeeeee 50%);
 }
 
-main>section>.section-4-left {
-    border: 2px solid coral;
-    height: 100%;
+.section-4 * {
+    color: black!important;
+}
+
+.section-4-left {
     display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    padding: 5% 10%;
+    height: 100%;
 }
 
 .section-4-left img {
-    width: calc(100% - 20%);
-    height: auto
+    width: auto;
+    height: 100%
+}
+
+.section-5 {
+    border: 4px solid red;
+}
+
+.section-5>div {
+    border: 3px solid orange;
+}
+
+.section-4-left, .section-5-left, .section-6-left {
+    padding: 140px 60px;
+    align-items: flex-end;
+}
+
+.section-5-right, .section-4-right, .section-6-right {
+    padding: 140px 60px;
+    align-items: flex-start;
+}
+
+.wrapper {
+    display: flex;
+    border: 3px solid blue;
+    flex-direction: column;
+    align-items: flex-end;
+    max-width: 450px;
+    flex: 1;
+    justify-content: center;
+    height: 100%;
 }
 
 .section-9 {
@@ -367,29 +302,4 @@ main>section>.section-4-left {
     border-bottom: 1px solid coral;
     padding: 60px 0;
     text-align: center;
-}
-
-footer {
-    padding: 120px 0;
-    display: flex;
-    flex-direction: row;
-    max-width: 1200px;
-    justify-content: center;
-    margin: auto;
-}
-
-.footer-col:not(:last-child) {
-    border: 1px solid red;
-    display: flex;
-    flex: 1;
-    flex-direction: column;
-}
-
-.footer-col:last-child {
-    border: 1px solid blue;
-    width: 30%;
-}
-
-footer ul {
-    list-style: none;
 }
