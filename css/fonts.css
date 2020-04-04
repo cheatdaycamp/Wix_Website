@@ -24,6 +24,12 @@
 
 @font-face {
     font-family: HelveNeu;
+    src: url('../fonts/HelveticaNeueLTSMd-Ex.otf');
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: HelveNeu;
     src: url('../fonts/HelveticaNeueLTstd-Md.otf');
     font-weight: 800;
 }

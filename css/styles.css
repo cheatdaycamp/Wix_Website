@@ -182,14 +182,49 @@ main>section>div * {
     color: black;
 }
 
+section div a {
+    color: white;
+    margin-top: 1.5rem;
+}
+
+section div a, section div a u {
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+section div a:HOVER {
+    text-decoration: none;
+    opacity: .9;
+    color: white;
+}
+
 .section-2 {
-    background-color: blue;
-    height: 680px;
-    font-size: 24px;
+    background-color: #14348e;
+    height: 600px;
 }
 
 .section-2>div {
     align-items: left;
+}
+
+.section-2-left {
+    padding: 2rem;
+}
+
+.section-2-left h1 {
+    font-size: 3rem;
+    text-align: center;
+    font-weight: 800;
+}
+
+.section-2-right {
+    margin-left: 50px;
+}
+
+.section-2-right p {
+    font-size: 1.2rem;
+    /*text-align: center;*/
+    font-weight: 300;
 }
 
 .section-3 {
