@@ -1,7 +1,12 @@
+
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: HelveNeu;
+    font-weight: 300;
+    font-size: 16px;
 }
 
 html, body {
@@ -11,7 +16,6 @@ html, body {
 body {
     display: flex;
     flex-direction: column;
-    font-family: Arial, Helvetica, sans-serif
 }
 
 p {
@@ -41,14 +45,13 @@ p {
 
 .separator hr {
     border: .5px solid rgba(0, 0, 0, .05);
-    width: 100%;
+    max-width: 100%;
     padding: 0;
     margin: 0;
 }
 
 .nav-right-wrapper button {
     border-radius: 38px;
-    font: normal normal normal 16px/1.4em helveticaneuew01-55roma, sans-serif;
     transition: color 0.4s ease 0s;
     color: #116DFF;
     border: 1px solid #116DFF;
@@ -62,13 +65,6 @@ p {
     text-decoration: none;
     color: Black;
 }
-
-/*.nav-right-wrapper path, .nav-right-wrapper svg, .nav-right-wrapper g, .nav-right-wrapper defs, #world, #nav-logo-world {
-    fill: blue;
-    background-color: red;
-    color: orange;
-    opacity: 1;
-}*/
 
 .nav-right-wrapper button:hover {
     background-color: #116DFF;
@@ -92,7 +88,6 @@ p {
 
 #nav-logo-wix {
     height: 100%;
-    /*padding: 8px*/
 }
 
 .nav-right-wrapper {
@@ -126,9 +121,23 @@ main>section>div * {
     width: 100%;
 }
 
+.section-1 {
+    border: 4px solid black;
+    padding: 60px 0;
+}
+
 .section-1-center {
     width: 100%;
     text-align: center;
+    max-width: 1300px;
+}
+
+.section-1-center h1 {
+    font-size: 6rem;
+    font-family: Avenir;
+    font-family: HelveNeu;
+    font-weight: 800;
+    color: red;
 }
 
 .section-1-center * {
