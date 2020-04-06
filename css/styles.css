@@ -257,6 +257,10 @@ section hr {
 
 .section-10 ol {
     margin-left: 5rem;
+    display: flex;
+    flex-direction: column;
+    width: max-content;
+    align-self: flex-start;
 }
 
 .section-10 a, .section-10 a * {
@@ -273,7 +277,6 @@ section hr {
 }
 
 .section-10-center {
-    border: 5px solid blue;
     flex: 1;
     display: flex;
     justify-content: center;
@@ -334,13 +337,20 @@ section hr {
     text-align: center;
 }
 
-.section-12 ol {
-    border: 10px solid pink;
+.section-12 {
+    border: 5px solid violet;
+    display: flex;
+    flex-direction: column;
 }
 
-.section-12-center ol li {
-    display: flex;
-    border: 1px solid black;
+.section-12 ol {
+    border: 10px solid pink;
+    list-style-type: decimal;
+}
+
+.section-12-center {
+    border: 3px solid lightblue;
+    max-width: 100%;
 }
 
 .column {
