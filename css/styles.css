@@ -95,17 +95,17 @@
     height: 900px;
 }
 
-.section-5 {
-    height: 600px;
+section hr {
+    background-color: white;
+    height: 1px;
 }
 
 .section-6 {
-    border: 6px solid lightseagreen!important;
+    padding-bottom: 200px;
 }
 
 .section-6>div {
     max-height: min-content;
-    border: 2px solid coral;
 }
 
 .section-6 img {
@@ -157,11 +157,6 @@
     height: min-content;
 }
 
-section hr {
-    background-color: white;
-    height: 1px;
-}
-
 .section-3-right img {
     width: 50%;
     height: auto;
@@ -190,9 +185,11 @@ section hr {
 
 .section-5>div {
     border: 3px solid orange;
+    padding: 0 60px;
+    padding-bottom: 60px
 }
 
-.section-4>div, .section-5>div {
+.section-4>div {
     padding: 140px 60px;
 }
 
@@ -337,9 +334,40 @@ section hr {
     text-align: center;
 }
 
+.section-12 ol {
+    border: 10px solid pink;
+}
+
 .section-12-center ol li {
     display: flex;
-    border-top: 1px solid black;
+    border: 1px solid black;
+}
+
+.column {
+    display: flex;
+    /*border: 2px solid green;*/
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.row {
+    display: flex;
+    padding: 5rem 0;
+    flex-direction: row;
+}
+
+.row b {
+    font-weight: 600;
+}
+
+.row * {
+    display: flex;
+    flex: 1;
+}
+
+.row>hr {
+    border: 4px solid blue!important;
 }
 
 .section-13-center {
