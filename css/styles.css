@@ -197,6 +197,18 @@ section hr {
     padding: 140px 60px;
 }
 
+.section-9>div {
+    padding: 10rem 60px 0px
+}
+
+.section-9>div .wrapper {
+    justify-content: flex-start;
+}
+
+.section-9 a, .section-9 a * {
+    color: white;
+}
+
 .section-6>div, .section-8>div {
     padding: 0 60px;
 }
