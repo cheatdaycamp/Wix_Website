@@ -17,7 +17,6 @@
 
 .section-1-center button {
     border-radius: 38px;
-    transition: color 0.4s ease 0s;
     border: 1px solid #116DFF;
     padding: 10px 40px;
     margin: 30px 0;
@@ -218,6 +217,7 @@ section hr {
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: #f4f4f4;
 }
 
 .wrapper {
@@ -262,6 +262,62 @@ section hr {
 .section-11-template {
     width: 33%;
     text-align: center;
+}
+
+.section-10 {
+    background-color: #f4f4f4;
+}
+
+.section-10 h1 {
+    margin-bottom: .5rem
+}
+
+.section-10 h5, .section-10 ol {
+    margin-bottom: 3rem
+}
+
+.section-10 ol {
+    margin-left: 5rem;
+}
+
+.section-10 a, .section-10 a * {
+    transition: 0.4s ease;
+}
+
+.section-10 a:hover, .section-10 a *:hover {
+    color: #116DFF;
+}
+
+.section-10 ol li {
+    padding: .4rem;
+    font-weight: bold;
+}
+
+.section-10-center {
+    border: 5px solid blue;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    padding: 10rem 0;
+    padding-left: 300px;
+}
+
+.wrapper-horizontal {
+    margin-top: 30px;
+    display: flex;
+    border: 1px solid red;
+    justify-content: flex-start;
+}
+
+.wrapper-horizontal>* {
+    bordeR: 2px solid green;
+    width: min-content;
+    white-space: nowrap;
+    margin: 0;
+}
+
+.wrapper-horizontal>*:not(:first-child) {
+    margin-left: 40px;
 }
 
 .section-12-center ol li {

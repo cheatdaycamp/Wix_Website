@@ -1,5 +1,11 @@
 @font-face {
     font-family: HelveNeu;
+    src: url('../fonts/HelveticaNeueLTStd-MdEx.otf');
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: HelveNeu;
     src: url('../fonts/HelveticaNeueLTStd-ThEx.otf');
     font-weight: 300;
 }
