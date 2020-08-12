@@ -30,13 +30,13 @@
 
 @font-face {
     font-family: HelveNeu;
-    src: url('../fonts/HelveticaNeueLTstd-LtEx.otf');
+    src: url('../fonts/HelveticaNeueLTStd-LtEx.otf');
     font-weight: 700;
 }
 
 @font-face {
     font-family: HelveNeu;
-    src: url('../fonts/HelveticaNeueLTstd-Md.otf');
+    src: url('../fonts/HelveticaNeueLTStd-Md.otf');
     font-weight: 800;
 }
 
